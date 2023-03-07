@@ -57,7 +57,19 @@ function likesCookies() {
     return reponse;
 }
 
-let reponse = likesCookies();
+function rateMyPage(){
+    let rating = prompt("How many start would you rate my page? (1-5)"); // 3
+    for(i = 1; i <= rating; i++){
+        document.write('<img class="star" src="star.jpg" alt="Star">');
+    }
+}
 
-console.log(reponse);
+// 0 | 0 < 3 ? T | excute | img star && i = 0 + 1 
+
+
+// 1 | 1 <= 3 ? T | excute | img star && i = i(1) + 1
+// 2 | 2 <= 3 ? T | excute | img star && i = i(2) + 1
+// 3 | 3 <= 3 ? T | excute | img star && i = i(3) + 1
+// 4 | 4 <= 3 ? F | break;
+
 
